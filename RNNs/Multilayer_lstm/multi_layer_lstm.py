@@ -9,7 +9,6 @@ from __future__ import print_function
 
 import tensorflow as tf
 from tensorflow.python.ops import rnn, rnn_cell
-from custom_lstm import CustomBasicLSTMCell
 import numpy as np
 
 # Import MNIST data
@@ -30,7 +29,7 @@ display_step = 10
 
 # Network Parameters
 n_input = 28 # MNIST data input (img shape: 28*28)
-n_steps = 5 # timesteps
+n_steps = 28 # timesteps
 n_hidden = 15 # hidden layer num of features
 n_classes = 10 # MNIST total classes (0-9 digits)
 
